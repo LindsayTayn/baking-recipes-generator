@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Baking recipes generator</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
         <h1 class="header">Welcome to the AI Baking Recipes Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="recipe-generator">
           <input
             type="text"
             placeholder="Enter the topic of the baking recipe"
@@ -23,8 +24,7 @@
           />
           <input type="submit" class="search-button" />
         </form>
-        <div class="recipe">
-          The recipe will go here
+        <div class="recipe" id="recipe">
           <br />
         </div>
       </main>
