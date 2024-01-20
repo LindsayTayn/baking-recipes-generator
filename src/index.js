@@ -18,6 +18,10 @@ function recipeGenerator(event) {
     "You are a baking recipes expert and love to write easy baking recipes.Your mission is to generate a simple recipe, using metrics unit, in basic HTML and seperate each line with a <br/>.Make sure to follow the user instructions.Sign the recipe with `From AI baking recipes`inside a <strong></strong> element at the end of the recipe.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.classList.remove("hidden");
+  recipeElement.innerHTML = `🧁 Generating the ${instructionsInput.value} recipe, please wait ... 🧁`;
+
   axios.get(apiUrl).then(displayRecipe);
 }
 

@@ -9,12 +9,11 @@ body {
 
 form {
   display: flex;
-  margin-left: 25px;
-  padding: 20px;
 }
 
 footer {
   margin-top: 20px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -43,6 +42,10 @@ a {
   padding: 28px 10px;
   text-align: center;
 }
+.form-container {
+  margin-left: 25px;
+  padding: 20px;
+}
 
 .search {
   background-color: #f3f6f6;
@@ -64,6 +67,11 @@ a {
   opacity: 0.9;
   padding: 0 14px;
 }
+
+.show-exemple {
+  margin-top: 10px;
+  opacity: 0.7;
+}
 .recipe {
   font-size: 16px;
   margin-bottom: 10px;
@@ -72,4 +80,8 @@ a {
 
 .recipe strong {
   color: #ff7789;
+}
+
+.hidden {
+  display: none;
 }

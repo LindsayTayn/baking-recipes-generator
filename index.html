@@ -14,19 +14,25 @@
         <h1 class="header">Welcome to the AI Baking Recipes Generator</h1>
       </header>
       <main>
-        <form id="recipe-generator">
-          <input
-            type="text"
-            placeholder="Enter the topic of the baking recipe"
-            autofocus
-            required
-            autocomplete="off"
-            class="search"
-            id="user-instructions"
-          />
-          <input type="submit" class="search-button" />
-        </form>
-        <div class="recipe" id="recipe">
+        <div class="form-container">
+          <form id="recipe-generator">
+            <input
+              type="text"
+              placeholder="Enter the topic of a baking recipe that you would like to cook"
+              autofocus
+              required
+              autocomplete="off"
+              class="search"
+              id="user-instructions"
+            />
+            <input type="submit" class="search-button" />
+          </form>
+          <small class="show-exemple"
+            >i.e:Pancake, cookie, muffin or brioche...</small
+          >
+        </div>
+
+        <div class="recipe hidden" id="recipe">
           <br />
         </div>
       </main>
